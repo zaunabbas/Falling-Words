@@ -13,7 +13,7 @@ Go to the [Download Link](https://drive.google.com/file/d/1gzzpoDQQhulxT6rxXsAEd
 <img src="/preview/preview1.png" width="32%"/>
 <img src="/preview/preview2.png" width="32%"/>
 <img src="/preview/preview3.png" width="32%"/>
-<img src="/preview/video.mp4" width="32%"/>
+<img src="/preview/video.gif" width="32%"/>
 </p>
 
 ## Tech stack & Open-source libraries
