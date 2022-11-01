@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FallingWordsGame</string>
+    <string name="icon">icon</string>
+    <string name="instructions">- Falling words is a game where you must tap Correct Or Wrong Button if the falling word is either correct or wrong Spanish translation of the given word.\n\n- The player needs to answer, before the word reaches the bottom of the screen.</string>
+    <string name="btn_start_game">Start Game</string>
+    <string name="score">score: </string>
+    <string name="lives">"Lives: "</string>
+    <string name="btnCorrect">Correct</string>
+    <string name="btnWrong">Wrong</string>
+    <string name="falling_words">Falling Words</string>
+    <string name="how_to_play">How to Play</string>
+    <string name="label_instructions">Instructions:</string>
+    <string name="btn_restart_game">Restart Game</string>
+    <string name="game_over">Game Over</string>
+    <string name="your_score">"Your Score: "</string>
+    <string name="correct_answers">Correct Answers</string>
+    <string name="no_attempts">No Attempts</string>
+    <string name="wrong_answers">Wrong Answers</string>
+</resources>

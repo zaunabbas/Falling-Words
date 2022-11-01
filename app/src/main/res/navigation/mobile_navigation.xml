@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_start_game">
+
+    <fragment
+        android:id="@+id/navigation_start_game"
+        android:name="com.zacoding.android.fallingwords.presentation.startgame.StartGameFragment"
+        tools:layout="@layout/fragment_start_game">
+
+        <action
+            android:id="@+id/action_to_falling_words_game_fragment"
+            app:destination="@id/navigation_falling_words_game"
+            app:popUpTo="@id/navigation_start_game"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_falling_words_game"
+        android:name="com.zacoding.android.fallingwords.presentation.game.FallingWordsGameFragment"
+        tools:layout="@layout/fragment_falling_words_game" />
+</navigation>

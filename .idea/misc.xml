@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Zain/Personal/Projects/Android/Babble-Code-Challenge/Code/Local/app/src/main/res/drawable/ic_baseline_cancel_24.xml" value="0.141" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Babble-Code-Challenge/Code/Local/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.141" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Babble-Code-Challenge/Code/Local/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.141" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Babble-Code-Challenge/Code/Local/app/src/main/res/layout/activity_list.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Babble-Code-Challenge/Code/Local/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Babble-Code-Challenge/Code/Local/app/src/main/res/layout/fragment_falling_words_game.xml" value="0.18443002780352177" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Babble-Code-Challenge/Code/Local/app/src/main/res/layout/fragment_start_game.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Babble-Code-Challenge/Code/Local/app/src/main/res/layout/layout_game_over.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Justtrack-Test/Code/app/src/main/res/layout/viewholder_album_item.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Sixt-Code-Challenge/CarsApp/app/src/main/res/layout/activity_list.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Sixt-Code-Challenge/CarsApp/app/src/main/res/layout/row_chip_view.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Sixt-Code-Challenge/CarsApp/app/src/main/res/layout/viewholder_album_item.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Sixt-Code-Challenge/Code/app/src/main/res/layout/activity_list.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Sixt-Code-Challenge/Code/app/src/main/res/layout/activity_map_list.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Sixt-Code-Challenge/Code/app/src/main/res/layout/bottomsheet_cars_list.xml" value="0.24895833333333334" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Sixt-Code-Challenge/Code/app/src/main/res/layout/fragment_map_list.xml" value="0.10092592592592593" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Sixt-Code-Challenge/Code/app/src/main/res/layout/layout_map_car_view.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Sixt-Code-Challenge/Code/app/src/main/res/layout/row_chip_view.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Sixt-Code-Challenge/Code/app/src/main/res/layout/viewholder_album_item.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Sixt-Code-Challenge/Code/app/src/main/res/layout/viewholder_cars_item.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Zenjob-Code-Challenge/public-zenjob-android-challenge/app/src/main/res/drawable/draw_vote_average.xml" value="0.1425" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Zenjob-Code-Challenge/public-zenjob-android-challenge/app/src/main/res/drawable/image_gradient.xml" value="0.1425" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Zenjob-Code-Challenge/public-zenjob-android-challenge/app/src/main/res/layout/activity_detail.xml" value="0.24583333333333332" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Zenjob-Code-Challenge/public-zenjob-android-challenge/app/src/main/res/layout/activity_list.xml" value="0.24583333333333332" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Zenjob-Code-Challenge/public-zenjob-android-challenge/app/src/main/res/layout/layout_empty_view.xml" value="0.24583333333333332" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Zenjob-Code-Challenge/public-zenjob-android-challenge/app/src/main/res/layout/viewholder_movie_item.xml" value="0.24583333333333332" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Zenjob-Code-Challenge/zaun-public-movie-app/app/src/main/res/layout/activity_list.xml" value="0.25" />
+        <entry key="..\:/Zain/Personal/Projects/Android/Zenjob-Code-Challenge/zaun-public-movie-app/app/src/main/res/layout/viewholder_movie_item.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
