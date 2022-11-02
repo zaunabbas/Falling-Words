@@ -42,18 +42,18 @@ Go to the [Download Link](https://drive.google.com/file/d/1gzzpoDQQhulxT6rxXsAEd
 ## Time Distribution
 
 - I've spent about 7-8 hours on the app.
-- (1 hour) for planning the game concept, base architecture with Dagger Hit setup.
-- (1:30 hour) for building views and game UI controls.
-- (2:30 hour) for developing game logic and the data layer.
-- (1:30 hour) for writing tests both unit-testing and UI-testing.
-- (30 minutes) for documentation.
-- (1 hour) for Dev Testing.
+- <b>1 hour</b> for planning the game concept, base architecture with Dagger Hit setup.
+- <b>1:30 hour</b> for building views and game UI controls.
+- <b>2:30 hour</b> for developing game logic and the data layer.
+- <b>1:30 hour</b> for writing tests both unit-testing and UI-testing.
+- <b>30 minutes</b> for documentation.
+- <b>1 hour</b> for Dev Testing.
 
 ## To Improve
 Due to time constraints, I wish I could improve the app with the following:
 
-- Add constructive learning strategy so users learn new words by time with incremental levels.
-- Introduce different levels of difficulty with more game elements (i.e: faster words fall - leader board)
+- Introduce different levels of difficulty with easy, medicum and hard to speedup the falling word.
 - Creating background service to sync new words from the server to the app’s local database.
 - Improve user experience for better interaction by adding sounds and vibration effects, with correction if the chosen word is wrong.
-- Add a user dictionary where all the correct solved words saved, so users can get back to them any time.
+- Add a user dictionary where all the correct words saved, so users can get back to them any time.
+- Improve the scrore board screen and show the words with translations that played out during the session so. 
