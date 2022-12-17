@@ -1,6 +1,6 @@
 package com.zacoding.android.fallingwords.data
 
-sealed class DataResource<out R> {
+sealed class DataResource<out R> (){
     data class Success<out T>(val data: T) : DataResource<T>()
     object Empty : DataResource<Nothing>()
     data class Error<out T>(val exception: Throwable) : DataResource<Nothing>()

@@ -12,7 +12,9 @@ import androidx.annotation.VisibleForTesting
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import com.zacoding.android.fallingwords.R
 import com.zacoding.android.fallingwords.data.model.Question
 import com.zacoding.android.fallingwords.data.model.UserActionFeedback
@@ -83,24 +85,27 @@ class FallingWordsGameFragment : Fragment() {
 
     private fun observeState() {
         lifecycleScope.launchWhenStarted {
-            gameViewModel.uiState.collect { uiState ->
-                when (uiState) {
-                    is LoadingState -> {
-                        //do nothing
-                    }
 
-                    is ContentState -> {
-                        //do nothing
-                    }
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                gameViewModel.uiState.collect { uiState ->
+                    when (uiState) {
+                        is LoadingState -> {
+                            //do nothing
+                        }
 
-                    is EmptyState -> {
-                        //do nothing
-                    }
+                        is ContentState -> {
+                            //do nothing
+                        }
 
-                    is ErrorState -> {
-                        activity?.showErrorMessageInDialog(errorMessage = uiState.message)
-                    }
+                        is EmptyState -> {
+                            //do nothing
+                        }
 
+                        is ErrorState -> {
+                            activity?.showErrorMessageInDialog(errorMessage = uiState.message)
+                        }
+
+                    }
                 }
             }
         }
@@ -109,64 +114,82 @@ class FallingWordsGameFragment : Fragment() {
     private fun observeData() {
 
         lifecycleScope.launchWhenStarted {
-            gameViewModel.question.collectLatest {
-                it?.let {
-                    startFallingAnswer(it)
+
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                gameViewModel.question.collectLatest {
+                    it?.let {
+                        startFallingAnswer(it)
+                    }
                 }
             }
         }
 
         lifecycleScope.launchWhenStarted {
-            gameViewModel.userScore.collectLatest {
-                binding.tvUserScore.text = it.toString()
+
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                gameViewModel.userScore.collectLatest {
+                    binding.tvUserScore.text = it.toString()
+                }
             }
         }
 
         lifecycleScope.launchWhenStarted {
-            gameViewModel.userLives.collectLatest {
-                binding.tvUserLives.text = it.toString()
+
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                gameViewModel.userLives.collectLatest {
+                    binding.tvUserLives.text = it.toString()
+                }
             }
         }
 
         lifecycleScope.launchWhenStarted {
-            gameViewModel.timerState.collectLatest {
-                binding.tvCounter.text = it.toString()
+
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                gameViewModel.timerState.collectLatest {
+                    binding.tvCounter.text = it.toString()
+                }
             }
         }
 
         lifecycleScope.launchWhenStarted {
-            gameViewModel.userActionFeedback.collectLatest {
-                if (it != UserActionFeedback.DEFAULT) {
-                    stopFallingAnimation()
-                    when (it) {
-                        UserActionFeedback.CORRECT -> {
-                            binding.ivAnswer.setImageResource(R.drawable.ic_baseline_check_24)
+
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                gameViewModel.userActionFeedback.collectLatest {
+                    if (it != UserActionFeedback.DEFAULT) {
+                        stopFallingAnimation()
+                        when (it) {
+                            UserActionFeedback.CORRECT -> {
+                                binding.ivAnswer.setImageResource(R.drawable.ic_baseline_check_24)
+                            }
+                            UserActionFeedback.WRONG,
+                            UserActionFeedback.NO_ATTEMPT -> {
+                                binding.ivAnswer.setImageResource(R.drawable.ic_baseline_close_24)
+                            }
+                            else -> {
+                                //do nothing
+                            }
                         }
-                        UserActionFeedback.WRONG,
-                        UserActionFeedback.NO_ATTEMPT -> {
-                            binding.ivAnswer.setImageResource(R.drawable.ic_baseline_close_24)
-                        }
-                        else -> {
-                            //do nothing
-                        }
+
+                        binding.ivAnswer.isVisible = true
+                        binding.ivAnswer.postDelayed(
+                            {
+                                binding.ivAnswer.isVisible = false
+                                gameViewModel.sendNewWord()
+                            }, 1000
+                        )
                     }
 
-                    binding.ivAnswer.isVisible = true
-                    binding.ivAnswer.postDelayed(
-                        {
-                            binding.ivAnswer.isVisible = false
-                            gameViewModel.sendNewWord()
-                        }, 1000
-                    )
                 }
-
             }
         }
 
         lifecycleScope.launchWhenStarted {
-            gameViewModel.gameOverState.collectLatest {
-                if (it) {
-                    onGameOver()
+
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                gameViewModel.gameOverState.collectLatest {
+                    if (it) {
+                        onGameOver()
+                    }
                 }
             }
         }
